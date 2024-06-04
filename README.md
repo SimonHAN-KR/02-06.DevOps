@@ -2,6 +2,6 @@
 
 1. docker
 
-2. terraform
+2. Terraform
 
-3. Vagrantfile
+3. Vagrant
