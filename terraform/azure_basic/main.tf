@@ -16,15 +16,15 @@ provider "azurerm" {
 }
 
 # Create a resource group
-resource "azurerm_resource_group" "example" {
-  name     = "example-resources"
+resource "azurerm_resource_group" "RG-01" {
+  name     = "shaun-terraform-RG"
   location = "East US"
 }
 
 # Create a virtual network within the resource group
-resource "azurerm_virtual_network" "example" {
-  name                = "example-network"
-  resource_group_name = azurerm_resource_group.example.name
-  location            = azurerm_resource_group.example.location
+resource "azurerm_virtual_network" "Vnet-01" {
+  name                = "shaun-terraform-Vnet"
+  resource_group_name = azurerm_resource_group.RG-01.name
+  location            = azurerm_resource_group.RG-01.location
   address_space       = ["10.0.0.0/16"]
 }
