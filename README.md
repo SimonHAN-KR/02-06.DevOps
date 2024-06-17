@@ -3,7 +3,7 @@
 1. docker
 
 2. Terraform
-    1) AWS
-    2) Azure
+    1) AWS_Terraform
+    2) Azure_Terraform
 
 3. Vagrant
