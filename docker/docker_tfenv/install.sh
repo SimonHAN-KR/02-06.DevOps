@@ -8,6 +8,7 @@ mkdir work
 chown -R $SSH_USER:$SSH_USER work 
 sudo git clone https://github.com/tfutils/tfenv.git /home/$SSH_USER/.tfenv 
 echo 'export PATH="$HOME/.tfenv/bin:$PATH"' >> /home/$SSH_USER/.bash_profile
+chown -R $SSH_USER:$SSH_USER .tfenv 
 # source $HOME/.bash_profile
 }
 
